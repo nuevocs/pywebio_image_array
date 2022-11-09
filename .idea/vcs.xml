@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/Hugo/devtest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Hugo/devtest/themes/ananke" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Hugo/hugo-nuevocs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Hugo/hugo-nuevocs/themes/LoveIt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Hugo/lovbak" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Hugo/lovbak/themes/LoveIt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Hugo/nuevocs-net" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Hugo/nuevocs-net/content" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Hugo/nuevocs-net/themes/LoveIt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Hugo/quicksite" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Hugo/quicksite/themes/LoveIt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Hugo/quicksite/themes/ananke" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Hugo/quicksite/themes/paper" vcs="Git" />
+  </component>
+</project>
