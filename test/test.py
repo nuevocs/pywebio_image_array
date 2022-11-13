@@ -3,13 +3,13 @@ from pywebio import *
 from pywebio.input import *
 from pywebio.output import *
 from PIL import Image
-import cv2
+# import cv2
 import numpy as np
 import io
 from io import BytesIO
 import matplotlib.pyplot as plt
-import plotly
-import plotly.graph_objects as go
+# import plotly
+# import plotly.graph_objects as go
 
 # https://stackoverflow.com/questions/49511753/python-byte-image-to-numpy-array-using-opencv
 
@@ -17,21 +17,18 @@ def conv_1(image_bytes):
     decoded = cv2.imdecode(np.frombuffer(image_bytes, np.uint8), -1)
     return decoded
 def conv_2(image_bytes):
-    image = np.array(Image.open(io.BytesIO(image_bytes))) 
+    image = np.array(Image.open(io.BytesIO(image_bytes)))
     return image
 def png_bytes_to_numpy(png):
     """Convert png bytes to numpy array
     https://gist.github.com/eric-czech/fea266e546efac0e704d99837a52b35f
-    
-    Example:  
-    
+
+    Example:
+
     >>> fig = go.Figure(go.Scatter(x=[1], y=[1]))
     >>> plt.imshow(png_bytes_to_numpy(fig.to_image('png')))
     """
     return np.array(Image.open(BytesIO(png)))
-
-
-
 
 def to_np(im):
     im.load()
@@ -59,7 +56,6 @@ def main():
         imc = get_img['content']
         # im = Image.frombytes('RGB', (100,100) ,im)
 
-
         im = png_bytes_to_numpy(imc)
         print(type(im))
         put_code(im)
@@ -82,15 +78,10 @@ def main():
 
         img_bytes = io.BytesIO()
         pil_img.save(img_bytes, format='PNG')
-        img_bytes = img_bytes.getvalue() 
+        img_bytes = img_bytes.getvalue()
         print(type(img_bytes))
         put_image(img_bytes)
         # https://zenn.dev/tamanobi/articles/88dacd450f8405c9a5a9
-
-
-
-
-
 
 def main2():
 
@@ -118,7 +109,4 @@ def main2():
 
 
 if __name__ == '__main__':
-    start_server(main, port=3000, debug=True)
-
-
-
+    start_server(main, port=8888, debug=True)

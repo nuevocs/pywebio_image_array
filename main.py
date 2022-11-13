@@ -1,5 +1,5 @@
 from PIL import Image
-import cv2
+# import cv2
 import numpy as np
 import timeit
 from matplotlib import pyplot as plt
@@ -31,13 +31,13 @@ def to_np(im):
 n = to_np(im)
 
 p = np.all(n==asnumpy)
-grey = cv2.cvtColor(n, cv2.COLOR_BGR2GRAY)
+# grey = cv2.cvtColor(n, cv2.COLOR_BGR2GRAY)
 
 
-img = Image.fromarray(grey, 'L') #'RGB', 'L'
+# img = Image.fromarray(grey, 'L') #'RGB', 'L'
 # img = Image.fromarray(n, 'RGB') #'RGB', 'L'
-img.save('files/my.png')
-img.show()
+# img.save('files/my.png')
+# img.show()
 
 # plt.imshow(grey, interpolation='nearest')
 # print(plt.show())
